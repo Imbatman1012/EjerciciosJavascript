@@ -1,0 +1,84 @@
+*{
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	font-family: Optima;
+}
+header{
+	width: 100%;
+	height: 80px;
+	background: #000;
+	float: left;
+}
+header ul{
+	margin: 0;
+	padding: 10px;
+	list-style: none;
+}
+header ul a li{
+	float: left;
+	font-size: 30px;
+	color: white;
+	text-decoration: none;
+	border: 10px;
+	margin: 10px;
+}
+header ul li:hover {
+
+	color: gray;
+	border-color: white;
+	border-top: 2px solid;
+}
+.container{
+	width: 80%;
+	margin: 0px auto;
+	color: #BBCF0C;
+	text-align:center;
+	font-size: 1.5rem;
+
+	/*border: 3px solid black;*/
+}
+.container h1{
+	te
+
+}
+#juega{
+	border: 5px solid;
+	display: table;
+	width: 100%;
+	height: 400px;
+	margin: 2rem auto;
+	background:#000;
+	text-align: center;
+}
+#juega #jueg{
+	display: table-cell;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+}
+#juega #jueg a{
+	margin: 0;
+	padding: 0;
+	color: #BBCF0C;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+#juega #jueg h1:hover{
+	color: red;
+	box-shadow: 2px solid;	
+}
+footer{
+	width: 100%;
+	height: 50px;
+	background: #000;
+	color: white;
+}
+footer h4{
+
+	margin: 20px;
+	padding: 10px;
+	
+}
