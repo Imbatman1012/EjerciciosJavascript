@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calcula la Edad de tu perro</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../styles/edad de tu perro.css">
+</head>
+<body>
+	<header class="header">
+		<ul>
+			<a href=""><li>Tarea1</li></a>
+			<a href="Pages/edad de tu perro.html"><li>Edad de tu perro</li></a>
+			<a href="Desafio2.html"><li>Desafio 2</li></a>
+			<a href=""><li>Juego</li></a>
+		</ul>
+	</header>
+	<div class="container">
+		<div class="calcular">
+			<br><br><br>
+			<h1 id="title">Calcula la edad de tu perro</h1>
+			<p id="Par">Para calcular la edad de tu perros solo coloca la edad de tu perro y has click en "calcular".</p>
+			<div id="entradas">
+				<input type="number" id="Año del perro">
+				<button id="btn">Calcular</button>
+			<br>
+			</div>
+    		<h2>Resultado</h2>
+    		<div id="res"></div>
+			<script type="text/javascript">
+				 function AñosPerrunos() 
+				 {
+				 	var añosPerro=parseInt(document.getElementById('Año del perro').value);
+				 	var res=Math.trunc(16 * Math.log(añosPerro) + 31);
+				    document.getElementById("res").innerHTML = "Tu perro tiene " + res +" Años, si fuera humano.";
+				 }
+				var btnn=document.getElementById('btn');
+				  
+				btnn.addEventListener('click',AñosPerrunos);
+
+			</script>
+		</div>
+		<div class="gallery">
+			
+		</div>
+	</div>
+	<footer>
+		<h4>Tarea para Inf-113</h4>
+	</footer>
+
+</body>
+</html>

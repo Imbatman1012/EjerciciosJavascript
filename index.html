@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 1</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header class="header">
+		<ul>
+			<a href=""><li>Tarea1</li></a>
+			<a href="Pages/edad de tu perro.html"><li>Edad de tu perro</li></a>
+			<a href="Pages/Desafio2.html"><li>Desafio 2</li></a>
+			<a href=""><li>Juego</li></a>
+		</ul>
+	</header>
+
+	<div class="container">
+		<div class="ejercicio">
+			<img src="Images/Practica1/tarea1.png">
+		</div>
+
+		<div class="ejercicio7">
+			<br><br><br>
+			<h1>Ejercicio 7</h1>
+			<h2>Inciso (a)</h2>
+			<h3 id="EjA"></h3>
+			<h2>Inciso (b)</h2>
+			<h3 id="EjB"></h3>
+			<script type="text/javascript">
+				var t =prompt("Introdusca valor de t: ");
+				var a =Math.log(Math.abs((t**2)-(t**3)));
+
+				var divicion = 75/2*t;
+				var coseno = Math.cos((0.8*t)-3);
+				var b =divicion*coseno
+				document.getElementById("EjA").innerHTML = a;
+				document.getElementById("EjB").innerHTML = b;
+			</script>
+		</div>
+
+		<div class="ejercicio8">
+			<h1>Ejercicio 8</h1>
+			<h2>Inciso (a)</h2>
+			<h3 id="EjA2"></h3>
+			<h2>Inciso (b)</h2>
+			<h3 id="EjB2"></h3>
+			<script type="text/javascript">
+				var x =prompt("Introdusca valor de X para el Ejercicio 2: ");
+				var y =prompt("Introdusca valor de y para el Ejercicio 2: ");
+				var a1 = x**2+y**2-(x**2/y**2);
+				document.getElementById("EjA2").innerHTML = a1;
+				var div = ((x-y)/(x-(2*y)))**2;
+				var div2 = Math.sqrt(x/y);
+				var b1 = Math.sqrt(x*y)-Math.sqrt(x+y)+div-div2;
+				document.getElementById("EjB2").innerHTML = b1;
+			</script>
+		</div>	
+	</div>
+	<footer>
+		<h4>Tarea para Inf-113</h4>
+	</footer>
+</body>
+</html>

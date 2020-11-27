@@ -1,0 +1,70 @@
+*{
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	font-family: Optima;
+}
+header{
+	width: 100%;
+	height: 80px;
+	background: #000;
+	float: left;
+}
+header ul{
+	margin: 0;
+	padding: 10px;
+	list-style: none;
+}
+header ul a li{
+	float: left;
+	font-size: 30px;
+	color: white;
+	text-decoration: none;
+	border: 10px;
+	margin: 10px;
+}
+header ul li:hover {
+
+	color: gray;
+	border-color: white;
+	border-top: 2px solid;
+}
+/*
+header ul li:hover {
+  background-color: #background: rgba(212,31,8,1);
+background: -moz-linear-gradient(top, rgba(212,31,8,1) 0%, rgba(241,44,9,1) 0%, rgba(211,37,13,1) 35%, rgba(207,38,23,1) 50%, rgba(207,38,23,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(212,31,8,1)), color-stop(0%, rgba(241,44,9,1)), color-stop(35%, rgba(211,37,13,1)), color-stop(50%, rgba(207,38,23,1)), color-stop(100%, rgba(207,38,23,1)));
+background: -webkit-linear-gradient(top, rgba(212,31,8,1) 0%, rgba(241,44,9,1) 0%, rgba(211,37,13,1) 35%, rgba(207,38,23,1) 50%, rgba(207,38,23,1) 100%);
+background: -o-linear-gradient(top, rgba(212,31,8,1) 0%, rgba(241,44,9,1) 0%, rgba(211,37,13,1) 35%, rgba(207,38,23,1) 50%, rgba(207,38,23,1) 100%);
+background: -ms-linear-gradient(top, rgba(212,31,8,1) 0%, rgba(241,44,9,1) 0%, rgba(211,37,13,1) 35%, rgba(207,38,23,1) 50%, rgba(207,38,23,1) 100%);
+background: linear-gradient(to bottom, rgba(212,31,8,1) 0%, rgba(241,44,9,1) 0%, rgba(211,37,13,1) 35%, rgba(207,38,23,1) 50%, rgba(207,38,23,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d41f08', endColorstr='#cf2617', GradientType=0 );;
+}*/
+
+.container{
+	width: 80%;
+	margin: 0px auto;
+	color: #BBCF0C;
+	/*border: 3px solid black;*/
+}
+.container .ejercicio img{
+	width: 200;
+	text-align: center;
+}
+h3{
+	background: orange;
+	width: 100%;
+	height: 20px;
+	padding-left: 20px;
+	color:black;
+}
+footer{
+	width: 100%;
+	height: 50px;
+	background: #000;
+	color: white;
+}
+footer h4{
+	margin: 20px;
+	padding: 10px;
+}

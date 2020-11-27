@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Desafio 2</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../Styles/Desafio2.css">
+</head>
+<body>
+	<header class="header">
+		<ul>
+			<a href="../index.html"><li>Tarea1</li></a>
+			<a href="edad de tu perro.html"><li>Edad de tu perro</li></a>
+			<a href="#"><li>Desafio 2</li></a>
+			<a href=""><li>Juego</li></a>
+		</ul>
+	</header>
+	<div class="container">
+		<div id="imagen del ejercicio">
+			<img src="../Images/Desafio2/Ejercicios.png">
+		</div>
+		<div class="Ejercicios" id="EjercicioA">
+			<h1>Ejercicio 7</h1>
+			<input type="text" id="T">
+			<button id="btn">Calcular</button>
+			<h2>Inciso (a)</h2>
+			<h3 id="ResA">Respuesta</h3>
+			<h2>Inciso (b)</h2>
+			<h3 id="ResB">Respuesta</h3>
+			<script type="text/javascript">
+				function Ejercicio7()
+				{
+					var t =parseInt(document.getElementById("T").value);
+					var a =Math.log(Math.abs((t**2)-(t**3)));
+
+					var t =parseInt(document.getElementById("T").value);
+					var a =Math.log(Math.abs((t**2)-(t**3)));
+	
+					var divicion = 75/2*t;
+					var coseno = Math.cos((0.8*t)-3);
+					var b =divicion*coseno
+
+					document.getElementById("ResA").innerHTML = a;
+					document.getElementById("ResB").innerHTML = b;
+
+				}
+				var btnn=document.getElementById('btn');
+				  
+				btnn.addEventListener('click',Ejercicio7);
+			</script>			
+		</div>
+		<div class="Ejercicios" id="Ejercicio8">
+			<h1>Ejercicio 8</h1>
+			<input type="text" id="insX">
+			<input type="text" id="insY">
+			<button id="btn2">Calcular</button>
+			<h2>Inciso (a)</h2>
+			<h3 id="EjA2">Respuesta</h3>
+			<h2>Inciso (b)</h2>
+			<h3 id="EjB2">Respuesta</h3>
+			<script type="text/javascript">
+				function Ejercicio8() 
+				{
+					var x =parseInt(document.getElementById('insX').value);
+					var y =parseInt(document.getElementById('insY').value);
+					var a1 = x**2+y**2-(x**2/y**2);
+					document.getElementById("EjA2").innerHTML = a1;
+					var div = ((x-y)/(x-(2*y)))**2;
+					var div2 = Math.sqrt(x/y);
+					var b1 = Math.sqrt(x*y)-Math.sqrt(x+y)+div-div2;
+					document.getElementById("EjB2").innerHTML = b1;
+				}
+				var btnn2=document.getElementById('btn2');				  
+				btnn2.addEventListener('click',Ejercicio8);				
+			</script>
+		</div>
+		<div class="Ejercicios" id="incisoA">
+			<h2>(a) Realizar un script para calcular las combinaciones mediante factoriales</h2>
+			<input type="text" id="factorial" name="">
+			<button id="btn3">Calcular</button>
+			<h3 id="resa">respuesta</h3>
+			<script type="text/javascript">
+				function factorial()
+				{
+					var num = parseInt(document.getElementById('factorial').value);
+
+					var total = 1;
+					for (var i = 1; i <= num; i++) 
+					{
+						total +=i;
+					}
+					document.getElementById('resa').innerHTML = "El factorial de "+num+" es "+total;
+
+				}
+				var btnn3=document.getElementById('btn3');
+				btnn3.addEventListener('click',factorial);
+			</script>
+		</div>
+		<div class="Ejercicios" id="incisoB">
+			<h2>(a) Realizar un script para calcular las combinaciones mediante factoriales</h2>
+			<input type="text" id="numero dado" name="">
+			<button id="btn4">Calcular</button>
+			<h3 id="Rb">respuesta</h3>
+			<script type="text/javascript">
+				function sumaDeDigitos()
+				{
+					var A=parseInt(document.getElementById('numero dado').value)
+					var	num = Math.log(A);
+					var n = A;
+					var suma = 0;
+					for (var i = 1; i <= num; i++) 
+					{
+						var dig = A % 10;
+						A = Math.trunc(A / 10);
+						suma = suma + dig;
+					}
+					document.getElementById('Rb').innerHTML = "La suma de los digitos de "+n+" es "+suma;
+				}
+				var btnn4 = document.getElementById('btn4');
+				btnn4.addEventListener('click',sumaDeDigitos);
+			</script>
+		</div>
+		<div class="Ejercicios" id="esPrimo">
+			<h2>(c) Determinar si un numero es primo</h2>
+			<input type="text" id="entrada primo" name="">
+			<button id="btn5">Calcular</button>
+			<h3 id="Rc">Respuesta</h3>
+			<script type="text/javascript">
+				function primo()
+				{
+					var	N = parseInt(document.getElementById('entrada primo').value)
+					var cont = 0;
+					for (var i = 1; i <= N; i++) 
+					{
+						if (N % i == 0)
+						{
+							cont+=1
+						}
+
+					}
+					if (cont == 2){
+						document.getElementById('Rc').innerHTML ="Es Primo";
+					}else{
+						document.getElementById('Rc').innerHTML ="No Es Primo";
+					}
+				}
+				var btnn5=document.getElementById('btn5');
+				btnn5.addEventListener('click',primo);
+			</script>
+		</div>
+		<div class="Ejercicios" id="Ecuaciones">
+			<h2>(d)Encontrar las raíces de una ecuación de 2do. Grado, dados (a,b,c)</h2>
+			<input type="text" id="ecuacionA" name="ecA"> X^2 +
+			<input type="text" id="ecuacionB" name="ecB"> X + 
+			<input type="text" id="ecuacionC" name="ecC">
+			<button id="button1">Calcular</button>
+			<h3 id="Rx1">Respuesta</h3>
+			<h3 id="Rx2">Respuesta</h3>
+			<script type="text/javascript">
+				function Ecuacion()
+				{
+					var a2 = parseint(document.getElementById('ecuacionA').value)
+					var b2 = parseInt(document.getElementById('ecuacionB').value)
+					var c2 = parseInt(document.getElementById('ecuacionC').value)
+
+					disc=(b2*b2)-4*a2*c2;      
+			         
+			        x1=(-b2+Math.sqrt(disc))/(2*a2);        
+			        x2=(-b2-Math.sqrt(disc))/(2*a2);
+				
+					document.getElementById('Rx1').innerHTML = x1;
+					document.getElementById('Rx2').innerHTML = x2;
+
+				}
+				var	btnn6=document.getElementById('button1');
+				btnn6.addEventListener('click',Ecuacion);
+			</script>
+		</div>
+		<div class="test"><!--
+			<h1>2. Elaborar un test con máximo 3 preguntas sobre el contenido del proyecto del 2do. Parcial.</h1>
+			<div class="pregresp">
+			  <div class="pregunta">1. ¿Que significa las siglas de HTML?<br />
+			  </div>
+			  <div class="respuestas">
+			    <input type="" name="preg1" value="1" /> HyperText Markup Language<br/>
+			  </div>
+			  <div class="pregunta">1. ¿Que son las etiquetas?<br />
+			  </div>
+			  <div class="respuestas">
+			    <input type="text" name="preg1" value="2" /> <br/>
+			  </div>
+			  <div class="pregunta">1. ¿Quien fue el que propuso crear un nuevo sistema de ipertexto para compartir documentos?<br />
+			  </div>
+			  <div class="respuestas">
+			    <input type="text" name="preg1" value="3" />Tim Berners-Lee<br/>
+			  </div>-->
+
+
+			  
+				<div class="preguntas">
+        <h1>2. Elaborar un test con máximo 3 preguntas sobre el contenido del proyecto del 2do. Parcial.</h1>
+        <hr>
+        <form action="" name="cuestionario">
+            <hr>
+            <div class="form-group">
+                <label>¿Que significa las siglas de HTML?</label>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio1" name="p1" value="0" class="custom-control-input" checked>
+                    <label class="custom-control-label" for="customRadio1">Hyper Markup Language Text</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio2" name="p1" value="1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio2">Hyper Text Markup Language</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>2.- ¿Quien creo html?</label>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio3" name="p2" value="0" class="custom-control-input" checked>
+                    <label class="custom-control-label" for="customRadio3">Clark kent</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio4" name="p2" value="1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio4">Tim Berners-Lee</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio5" name="p2" value="0" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio5">Aidan Gallhager</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>3.- ¿Cuando es se creo Html?</label>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio6" name="p3" value="0" class="custom-control-input" checked>
+                    <label class="custom-control-label" for="customRadio6">1979</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio7" name="p3" value="0" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio7">1981</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio8" name="p3" value="1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio8">1980</label>
+                </div>
+            </div><hr>
+            <button class="btn btn-success col-2" type="submitt" onclick="evaluar()">Enviar</button>
+            <button class="btn btn-danger col-2" type="reset">Limpiar</button>
+        </form>
+        <br>
+    </div>
+    <script>
+        function evaluar(){
+            var p1 = document.cuestionario.p1.value
+            var p2 = document.cuestionario.p2.value
+            var p3 = document.cuestionario.p3.value
+            var total = 0
+            total += parseInt(p1)+parseInt(p2)+parseInt(p3)
+            alert(" tienes un total de: "+total+"/3")
+        }
+    </script>
+
+			</div>
+		</div>
+	</div>
+	<footer>
+		<h4>Tarea para Inf-113</h4>
+	</footer>
+</body>
+</html>
